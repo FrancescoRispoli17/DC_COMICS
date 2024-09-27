@@ -1,0 +1,22 @@
+@use "variables.scss" as *;
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none !important;
+    color: black !important;
+}
+
+.fs-small{
+    font-size: 13px;
+}
+
+.bg-main{
+    background-color: $main-color;
+}
+
+.text-second{
+    color: $second-color !important;
+}

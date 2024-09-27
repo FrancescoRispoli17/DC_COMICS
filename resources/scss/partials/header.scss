@@ -1,0 +1,21 @@
+@use "variables.scss" as *;
+
+header{
+    ul{
+        font-size: 13px;
+        li{
+            display: inline-block;
+            margin: 0 18px;
+        }
+    }
+    
+    a{
+        color: $second-color;
+        padding-bottom: 50px;
+    }
+    
+    .headerActive{
+        border-bottom: 6px solid $main-color;
+        color: $main-color;
+    }
+}
