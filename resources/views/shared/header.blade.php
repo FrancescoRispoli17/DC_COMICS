@@ -7,7 +7,7 @@
             <div class="col-9 fw-bold text-end">
                 <ul class="m-0">
                     <li><a href="#" class="listLink">CHARACTERS</a></li>
-                    <li><a href="{{route('admin.comics.index')}}" class="listLink @yield('active')">COMICS</a></li>
+                    <li><a href="{{route('comics.index')}}" class="listLink @yield('active')">COMICS</a></li>
                     <li><a href="#" class="listLink">MOVIES</a></li>
                     <li><a href="#" class="listLink ">TV</a></li>
                     <li><a href="#" class="listLink">GAMES</a></li>
@@ -29,7 +29,7 @@
                             </a>
 
                             <div class="dropdown-menu dropdown-menu-right">
-                                <a class="dropdown-item" href="{{ route('admin.dashboard') }}">{{ __('Dashboard') }}</a>
+                                <a class="dropdown-item" href="{{ route('admin.dashboard') }}">{{ __('Profilo') }}</a>
                                 <a class="dropdown-item" href="{{ route('logout') }}"
                                     onclick="event.preventDefault();
                                                     document.getElementById('logout-form').submit();">

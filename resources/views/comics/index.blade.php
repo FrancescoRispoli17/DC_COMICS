@@ -18,7 +18,7 @@
             <div class="row">
                 @foreach ($comics as $comic )
                     <div class="col-auto p-4">
-                        <a href="{{route('admin.comics.show',$comic->id)}}">
+                        <a href="{{route('comics.show',$comic->id)}}">
                             <figure>
                                 <img src="{{$comic->thumb}}" alt="">
                             </figure>

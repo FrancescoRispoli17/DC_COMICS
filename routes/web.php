@@ -26,8 +26,9 @@ Route::middleware('auth', 'verified')
 ->prefix('admin')
 ->group(function () {
     Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
-    Route::resource('comics', ComicController::class);
 });
+
+Route::resource('comics', ComicController::class);
 
 Route::middleware('auth')
 ->group(function () {

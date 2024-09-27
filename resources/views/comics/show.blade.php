@@ -8,7 +8,7 @@
     <div class="container pt-4" id="show-page">
         <div class="row">
             <div class="col-auto fs-small">
-                <a href="{{route('admin.comics.index')}}">Comics</a>
+                <a href="{{route('comics.index')}}">Comics</a>
                 <span class="mx-2">></span><span class="mx-2">{{$comic->title}}</span>
                 <img src="{{$comic->thumb}}" alt="{{$comic->title}}" width="700px" class="d-block">
             </div>
