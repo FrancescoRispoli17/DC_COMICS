@@ -5,8 +5,10 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Comic;
+use App\Models\User;
 use Illuminate\Support\Facades\Validator as FacadesValidator;
 use Illuminate\Validation\Validator;
+use Spatie\Permission\Models\Role;
 
 class ComicController extends Controller
 {
@@ -47,6 +49,9 @@ class ComicController extends Controller
      */
     public function show(Comic $comic)
     {
+        // $role = Role::create(['name' => 'dataMenager']);
+        $user = User::find(1);
+        $user->assignRole('dataMenager');
         return view('comics.show', compact('comic'));
     }
 

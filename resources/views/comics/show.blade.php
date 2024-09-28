@@ -9,6 +9,11 @@
         <div class="row">
             <div class="col-auto fs-small">
                 <a href="{{route('comics.index')}}">Comics</a>
+                @auth
+                    @if (Auth::user()->hasRole('dataMenager'))
+                            aaaaaaaaaa
+                    @endif
+                @endauth
                 <span class="mx-2">></span><span class="mx-2">{{$comic->title}}</span>
                 <img src="{{$comic->thumb}}" alt="{{$comic->title}}" width="700px" class="d-block">
             </div>
