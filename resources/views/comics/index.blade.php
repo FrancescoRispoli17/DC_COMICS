@@ -17,16 +17,16 @@
             <div class="bg-main fw-bold fs-4 px-4 py-1 consigliati">CONSIGLIATI</div>
             <div class="row">
                 @foreach ($comics as $comic )
-                    <div class="col-auto p-4">
+                    <div class="col-6 col-md-4 col-lg-3 p-4 border-card">
                         <a href="{{route('comics.show',$comic->id)}}">
                             <figure>
                                 <img src="{{$comic->thumb}}" alt="">
                             </figure>
-                            <div class="text-dark fw-semibold comic-card d-flex text-center flex-column">
-                                <div class="m-0 fs-5">{{$comic->title}}</div>
+                            <div class="fw-semibold comic-card d-flex text-center flex-column">
+                                <div class="m-0">{{$comic->title}}</div>
                                 <div><small class="fw-light">{{$comic->type}}</small></div>
-                                <div class="fs-6 text-secondary fw-light">{{$comic->sale_date}}</div>
-                                <div class="mt-auto fs-5">${{$comic->price}}</div>
+                                <div class="text-secondary fw-light">{{$comic->sale_date}}</div>
+                                <div class="mt-auto">${{$comic->price}}</div>
                             </div>
                         </a>
                     </div>
