@@ -1,0 +1,35 @@
+.edit-profile{
+    input{
+        width: 30% !important;
+    }
+}
+
+@media screen and (max-width:991px){
+
+    .edit-profile{
+        input{
+            width: 40% !important;
+        }
+    }
+}
+
+@media screen and (max-width:767px){
+
+    .edit-profile{
+        input{
+            width: 55% !important;
+        }
+    }
+}
+
+@media screen and (max-width:484px){
+
+    .edit-profile{
+        label{
+            display: block !important;
+        }
+        input{
+            width: 70% !important;
+        }
+    }
+}
