@@ -18,7 +18,16 @@
                             </div>
                         @endif
 
-                        {{ __('You are logged in!') }}
+                        {{-- {{ $user->hero }} --}}
+                            @if (Auth::user()->hasRole('dataMenager'))
+                                <p>{{ $user->name }}</p>
+                                <p>{{ $user->email }}</p>
+                                <p>{{ $user->hero->matricola }}</p>
+                            @else
+                                <p>{{ $user->name }}</p>
+                                <p>{{ $user->email }}</p>
+                                @endif
+
                     </div>
                 </div>
             </div>

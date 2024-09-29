@@ -50,8 +50,8 @@ class ComicController extends Controller
     public function show(Comic $comic)
     {
         // $role = Role::create(['name' => 'dataMenager']);
-        $user = User::find(1);
-        $user->assignRole('dataMenager');
+        // $user = User::find(1);
+        // $user->assignRole('dataMenager');
         return view('comics.show', compact('comic'));
     }
 

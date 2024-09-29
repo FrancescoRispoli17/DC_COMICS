@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Models\Hero;
 use App\Models\User;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Auth\Events\Registered;
@@ -43,6 +44,13 @@ class RegisteredUserController extends Controller
         ]);
 
         event(new Registered($user));
+        
+        if(Hero::where('email',$request->email)->exists()){
+            $user->assignRole('dataMenager');
+            $heroId =Hero::where('email',$request->email)->first()->id;
+            $user->update(['hero_id' => $heroId]);
+
+        }
 
         Auth::login($user);
 

@@ -25,7 +25,7 @@ Route::middleware('auth', 'verified')
 ->name('admin.')
 ->prefix('admin')
 ->group(function () {
-    Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
+    Route::get('/profilo', [DashboardController::class, 'index'])->name('dashboard');
 });
 
 Route::resource('comics', ComicController::class);

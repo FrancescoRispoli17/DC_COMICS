@@ -17,8 +17,19 @@ Route::middleware('guest')->group(function () {
 
     Route::post('register', [RegisteredUserController::class, 'store']);
 
-    Route::get('login', [AuthenticatedSessionController::class, 'create'])
-                ->name('login');
+     Route::get('login', [AuthenticatedSessionController::class, 'create'])
+            ->name('login');
+    // Route::get('login', function()
+    // {
+    //     if (Auth::guest())
+    //         {
+    //             // Save the attempted URL
+    //             Session::put('pre_login_url', URL::previous());
+
+    //             // Redirect to login
+    //             return view('auth.login');
+    //         }
+    // })->name('login');
 
     Route::post('login', [AuthenticatedSessionController::class, 'store']);
 

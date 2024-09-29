@@ -8,6 +8,9 @@ use App\Providers\RouteServiceProvider;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\URL;
 use Illuminate\View\View;
 
 class AuthenticatedSessionController extends Controller
@@ -17,7 +20,11 @@ class AuthenticatedSessionController extends Controller
      */
     public function create(): View
     {
-        return view('auth.login');
+                // Save the attempted URL
+                Session::put('pre_login_url', URL::previous());
+
+                // Redirect to login
+                return view('auth.login');
     }
 
     /**
@@ -28,9 +35,17 @@ class AuthenticatedSessionController extends Controller
         $request->authenticate();
 
         $request->session()->regenerate();
-
-        return redirect()->intended(RouteServiceProvider::HOME);
-    }
+        
+        if ( Session::has('pre_login_url') )
+            {
+                $url = Session::get('pre_login_url');
+                Session::forget('pre_login_url');
+                  return Redirect::to($url);
+                //return redirect($url);
+            }
+		else
+            return redirect()->intended(RouteServiceProvider::HOME);
+	}
 
     /**
      * Destroy an authenticated session.
