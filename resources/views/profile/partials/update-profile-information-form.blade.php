@@ -20,13 +20,12 @@
         <div>
             <label for="">Nome</label>
             <x-text-input id="name" name="name" type="text" class="mt-1 mb-3 p-1 border border-dark-subtle rounded-pill" :value="old('name', $user->name)" required autofocus autocomplete="name" />
-            <x-input-error class="mt-2" :messages="$errors->get('name')" />
+            <x-input-error class="mt-2 text-danger" :messages="$errors->get('name')" />
         </div>
-
-        <div class="w-auto">
+        <div>
             <label for="">Email</label>
-            <x-text-input id="email" name="email" type="email" class="mt-1 p-1 border border-dark-subtle rounded-pill" :value="old('email', $user->email)" required autocomplete="email" />
-            <x-input-error class="mt-2" :messages="$errors->get('email')" />
+            <x-text-input id="email" name="email" type="email" class="mt-1 mb-3 p-1 border border-dark-subtle rounded-pill" :value="old('email', $user->email)" required autocomplete="email" />
+            <x-input-error class="mt-2 text-danger" :messages="$errors->get('email')" />
 
             @if ($user instanceof \Illuminate\Contracts\Auth\MustVerifyEmail && ! $user->hasVerifiedEmail())
                 <div>
@@ -46,6 +45,51 @@
                 </div>
             @endif
         </div>
+        @if (Auth::user()->hasRole('dataMenager'))
+            <div>
+                <label for="">Data di nascita</label>
+                <x-text-input 
+                id="data_nascita" 
+                name="data_nascita" 
+                type="date" 
+                class="mt-1 mb-3 p-1 border border-dark-subtle rounded-pill" 
+                :value="!$user->hero?->data_nascita ? '' : old('data_nascita', $user->hero->data_nascita)"
+                required 
+                autofocus 
+                autocomplete="name" 
+            />
+                <x-input-error class="mt-2 text-danger" :messages="$errors->get('data_nascita')" />
+            </div>
+            <div>
+                <label for="">Codice fiscale</label>
+                <x-text-input 
+                id="codice_fiscale" 
+                name="codice_fiscale" 
+                type="text" 
+                class="mt-1 mb-3 p-1 border border-dark-subtle rounded-pill"
+                style="text-transform: uppercase;" 
+                :value="!$user->hero?->codice_fiscale ? '' : old('codice_fiscale', $user->hero->codice_fiscale)"
+                required 
+                autofocus 
+                autocomplete="name" 
+            />
+                <x-input-error class="mt-2 text-danger" :messages="$errors->get('codice_fiscale')" />
+            </div>
+            <div>
+                <label for="">Indirizzo di residenza</label>
+                <x-text-input 
+                id="indirizzo" 
+                name="indirizzo" 
+                type="text" 
+                class="mt-1 mb-3 p-1 border border-dark-subtle rounded-pill" 
+                :value="!$user->hero?->indirizzo ? '' : old('indirizzo', $user->hero->indirizzo)"
+                required 
+                autofocus 
+                autocomplete="name" 
+            />
+                <x-input-error class="mt-2 text-danger" :messages="$errors->get('indirizzo')" />
+            </div>
+        @endif
 
         <div class="flex items-center gap-4">
             <x-primary-button>{{ __('Salva') }}</x-primary-button>

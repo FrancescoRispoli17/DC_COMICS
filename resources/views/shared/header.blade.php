@@ -2,9 +2,9 @@
         <nav class="navbar navbar-expand-md">
             <div class="container">
                 <div class="col-auto">
-                  <a class="navbar-brand" href="{{ url('/') }}"><img src="{{ Vite::asset('resources/img/DC_Comics_logo.svg.png') }}" alt="DC logo" width="80px"></a>
+                  <a class="navbar-brand" href="{{ url('/') }}"><img src="{{ Vite::asset('resources/img/DC_Comics_logo.svg.png') }}" alt="DC logo"></a>
               </div>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="col collapse navbar-collapse fw-bold" id="navbarSupportedContent">

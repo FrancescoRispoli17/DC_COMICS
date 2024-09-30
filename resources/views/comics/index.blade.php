@@ -9,16 +9,20 @@
 @endsection --}}
 
 @section('content')
-    <div>
-        <img src="https://static.dc.com/2024-07/2024_07_11_Marquee_3x1.jpg?w=1200" alt="DC logo" class="w-100">
-    </div>
+    @include('components.Head-img')
     <div id="section-2">
         <div class="container position-relative pt-5">
-            <div class="bg-main fw-bold fs-4 px-4 py-1 consigliati">CONSIGLIATI</div>
             <div class="row">
+                @auth
+                    @if (Auth::user()->hasRole('dataMenager'))
+                        <div class="col-12 my-2">
+                            <a href="{{ route('admin.comics.create') }}" class="btn btn-primary text-white">Nuovo fumetto</a>
+                        </div>
+                    @endif
+                @endauth
                 @foreach ($comics as $comic )
                     <div class="col-6 col-md-4 col-lg-3 p-4 border-card">
-                        <a href="{{route('comics.show',$comic->id)}}">
+                        <a href="{{route('comics.show',$comic)}}">
                             <figure>
                                 <img src="{{$comic->thumb}}" alt="">
                             </figure>

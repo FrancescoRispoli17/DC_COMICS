@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Artist;
 use Illuminate\Http\Request;
 use App\Models\Comic;
 use App\Models\User;
@@ -26,7 +27,8 @@ class ComicController extends Controller
      */
     public function create()
     {
-        return view('comics.create');
+        $artists=Artist::all();
+        return view('comics.create',compact('artists'));
     }
 
     /**

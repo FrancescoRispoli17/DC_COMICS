@@ -5,9 +5,7 @@
 @endsection
 
 @section('content')
-<div>
-    <img src="https://static.dc.com/2024-07/2024_07_11_Marquee_3x1.jpg?w=1200" alt="DC logo" class="w-100">
-</div>
+@include('components.Head-img')
 <div class="bg-main py-5" id="section-3">
     <div class="container text-light">
         <div class="row">

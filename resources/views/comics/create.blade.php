@@ -4,11 +4,11 @@
     Create
 @endsection
 
-@section('main')
+@section('content')
     <div class="container">
         <div class="row">
             <div class="col">   
-                <form action="{{ route('comics.store') }}" method="POST">
+                <form action="{{ route('admin.comics.store') }}" method="POST">
                     @csrf
                     
                     <div class="mb-3">

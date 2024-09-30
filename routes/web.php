@@ -26,9 +26,11 @@ Route::middleware('auth', 'verified')
 ->prefix('admin')
 ->group(function () {
     Route::get('/profilo', [DashboardController::class, 'index'])->name('dashboard');
+    Route::resource('comics', ComicController::class);
 });
 
-Route::resource('comics', ComicController::class);
+Route::get('/comics', [ComicController::class,'index'])->name('comics.index');
+Route::get('/comics/{comic}', [ComicController::class,'show'])->name('comics.show');
 
 Route::middleware('auth')
 ->group(function () {
