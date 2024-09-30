@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class StoreProjectRequest extends FormRequest
+class StoreComicRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -22,9 +22,15 @@ class StoreProjectRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'title' => ['required','unique:projects', 'max:50'],
-            'creation_date' => ['required'],
-            'size' => ['required'],
+            'title' =>['required','unique:comics',],
+            'description' =>['required'],
+            'thumb' =>['required'],
+            'price' =>['required'],
+            'sale_date' => ['required', 'date', 'before_or_equal:today'],
+            'type' =>['required'],
+            'page' =>['required'],
+            'size' =>['required'],
+            'artists' => ['required', 'array'],
         ];
     }
 }

@@ -5,7 +5,7 @@ namespace App\Http\Requests;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;
 
-class UpdateProjectRequest extends FormRequest
+class UpdateComicRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -23,9 +23,15 @@ class UpdateProjectRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'title' => ['required', 'max:50', Rule::unique('projects')->ignore($this->project)],
-            'creation_date' => ['required'],
-            'size' => ['required'],
+            'title' => ['required', Rule::unique('comics')->ignore($this->comic)],
+            'description' =>['required'],
+            'thumb' =>['required'],
+            'price' =>['required'],
+            'sale_date' => ['required', 'date', 'before_or_equal:today'],
+            'type' =>['required'],
+            'page' =>['required'],
+            'size' =>['required'],
+            'artists' => ['required', 'array'],
         ];
     }
 }

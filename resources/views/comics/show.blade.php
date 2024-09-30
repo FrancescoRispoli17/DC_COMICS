@@ -36,6 +36,13 @@
                     <p class="fw-bold text-second mb-0">Page: <span class="fw-medium">{{$comic->page}}</span></p>
                     <p class="fw-bold text-second mb-0">Formato: <span class="fw-medium">{{$comic->size}}</span></p>
                 </div>
+                @auth
+                    @if (Auth::user()->hasRole('dataMenager'))
+                        <div class="col-12 my-2">
+                            <a type="button" class="btn btn-primary text-white" href="{{route('admin.comics.edit', $comic)}}">Modifica</a>
+                        </div>
+                    @endif
+                @endauth
 
                 {{-- <form action="{{ route('comics.destroy', $comic->id) }}" method="POST">
                     @csrf
