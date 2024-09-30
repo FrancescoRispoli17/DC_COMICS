@@ -75,6 +75,50 @@ return [
         'size' => '18.2 x 27.4 cm'
     ],
     [
+        'title' => 'Batman Dannato',
+        'description' => 'Batman Dannato è un racconto dark e provocatorio che mescola elementi sovrannaturali e horror. Scritto da Brian Azzarello e illustrato da Lee Bermejo, questo volume esplora un\'alleanza tra Batman e John Constantine in una Gotham soprannaturale.',
+        'price' => 49.99,
+        'sale_date' => '2019-07-16',
+        'type' => 'Cartonato',
+        'artists' => [
+            'Brian Azzarello', 
+            'Lee Bermejo'
+        ],
+        'thumb' => 'https://www.panini.it/media/catalog/product/cache/a87cfc69c89e7921deea3a8e066ac416/m/1/m1dcbn001isbn_0.jpg',
+        'page' => 160,
+        'size' => '21.6 x 32.6 cm'
+    ],
+    [
+        'title' => 'Lobo DC Omnibus Vol 3',
+        'description' => 'L\'ultimo volume delle folli e violente avventure di Lobo. Questo Omnibus raccoglie le storie che concludono l\'epopea dell\'anti-eroe più sfrenato e temuto della galassia.',
+        'price' => 99.99,
+        'sale_date' => '2022-07-19',
+        'type' => 'Cartonato',
+        'artists' => [
+            'Keith Giffen', 
+            'Alan Grant', 
+            'Simon Bisley'
+        ],
+        'thumb' => 'https://www.panini.it/media/catalog/product/cache/a87cfc69c89e7921deea3a8e066ac416/M/1/M1OMNI038ISBN_0.jpg',
+        'page' => 816,
+        'size' => '18.4 x 27.7 cm'
+    ],       
+    [
+        'title' => 'Sandman Omnibus Vol 2',
+        'description' => 'Secondo volume della serie epica di Neil Gaiman, Sandman. Prosegue il viaggio onirico del Signore dei Sogni, con storie ricche di mitologia, filosofia e introspezione.',
+        'price' => 99.99,
+        'sale_date' => '2019-11-12',
+        'type' => 'Cartonato',
+        'artists' => [
+            'Neil Gaiman', 
+            'Mike Dringenberg', 
+            'Malcolm Jones III'
+        ],
+        'thumb' => 'https://www.panini.it/media/catalog/product/cache/968d306fb1cf333067a665f96384b6e4/M/1/M1ABSO022ISBN_0.jpg',
+        'page' => 576,
+        'size' => '18.4 x 27.7 cm'
+    ],    
+    [
         'title' => 'Wonder Woman: Terra Morta',
         'description' => 'Un\'avventura post-apocalittica di Wonder Woman scritta e illustrata da Daniel Warren Johnson. Diana si risveglia in un futuro distrutto per scoprire cosa è successo alla Terra e ai suoi abitanti.',
         'price' => 34.99,
@@ -103,6 +147,36 @@ return [
         'size' => '16.8 x 25.7 cm'
     ],
     [
+        'title' => 'Lobo DC Omnibus Vol 2',
+        'description' => 'Il secondo volume delle scatenate avventure di Lobo, in cui l\'antieroe affronta nemici cosmici, missioni impossibili e lotte all\'ultimo sangue, sempre con il suo inconfondibile stile brutale e dissacrante.',
+        'price' => 99.99,
+        'sale_date' => '2021-10-12',
+        'type' => 'Cartonato',
+        'artists' => [
+            'Keith Giffen', 
+            'Alan Grant', 
+            'Simon Bisley'
+        ],
+        'thumb' => 'https://www.panini.it/media/catalog/product/cache/a87cfc69c89e7921deea3a8e066ac416/m/1/m1omni023isbn_0jpg_1.jpg',
+        'page' => 800,
+        'size' => '18.4 x 27.7 cm'
+    ],
+    [
+        'title' => 'Swamp Thing Omnibus Vol 2',
+        'description' => 'Secondo volume dell\'epica saga di Alan Moore che ridefinisce Swamp Thing. Continua l\'esplorazione dei temi dell\'orrore e della natura, con nuove storie che approfondiscono il legame del protagonista con il mondo naturale.',
+        'price' => 99.99,
+        'sale_date' => '2022-06-14',
+        'type' => 'Cartonato',
+        'artists' => [
+            'Alan Moore', 
+            'Stephen Bissette', 
+            'John Totleben'
+        ],
+        'thumb' => 'https://www.panini.it/media/catalog/product/cache/a87cfc69c89e7921deea3a8e066ac416/M/1/M1ABSO007ISBN_0.jpg',
+        'page' => 448,
+        'size' => '18.4 x 27.7 cm'
+    ],
+    [
         'title' => 'Batman: Anno Uno',
         'description' => 'Una delle più importanti storie sulle origini di Batman, scritta da Frank Miller e disegnata da David Mazzucchelli. La trama racconta il primo anno di Bruce Wayne come il Cavaliere Oscuro.',
         'price' => 19.99,
@@ -115,6 +189,35 @@ return [
         'thumb' => 'https://www.panini.it/media/catalog/product/cache/a87cfc69c89e7921deea3a8e066ac416/M/1/M1BLMH009ISBNR1_0.jpg',
         'page' => 144,
         'size' => '16.8 x 25.7 cm'
+    ],
+    [
+        'title' => 'All Star Superman',
+        'description' => 'Una delle storie più acclamate di Superman, scritta da Grant Morrison e disegnata da Frank Quitely. Una reinterpretazione epica dell\'Uomo d\'Acciaio, che esplora la sua essenza e le sue sfide più grandi in uno stile unico.',
+        'price' => 89.99,
+        'sale_date' => '2019-09-24',
+        'type' => 'Cartonato',
+        'artists' => [
+            'Grant Morrison', 
+            'Frank Quitely'
+        ],
+        'thumb' => 'https://www.panini.it/media/catalog/product/cache/a87cfc69c89e7921deea3a8e066ac416/M/1/M1ABSO019ISBN_0.jpg',
+        'page' => 384,
+        'size' => '18.4 x 27.7 cm'
+    ],    
+    [
+        'title' => 'Sandman Omnibus Vol 3',
+        'description' => 'Il terzo volume della monumentale serie di Sandman, che continua a esplorare i mondi onirici creati da Neil Gaiman. Un racconto potente che intreccia storie e personaggi indimenticabili.',
+        'price' => 99.99,
+        'sale_date' => '2020-07-14',
+        'type' => 'Cartonato',
+        'artists' => [
+            'Neil Gaiman', 
+            'Jill Thompson', 
+            'Marc Hempel'
+        ],
+        'thumb' => 'https://www.panini.it/media/catalog/product/cache/a87cfc69c89e7921deea3a8e066ac416/M/1/M1ABSO024ISBN_0.jpg',
+        'page' => 560,
+        'size' => '18.4 x 27.7 cm'
     ],
     [
         'title' => 'Superman: Red Son',
@@ -130,6 +233,50 @@ return [
         'page' => 160,
         'size' => '16.8 x 25.7 cm'
     ],
+    [
+        'title' => 'The Killing Joke',
+        'description' => 'Una delle storie di Batman più famose di tutti i tempi, scritta da Alan Moore e disegnata da Brian Bolland. Questa edizione Absolute presenta una storia iconica che esplora il rapporto tra il Cavaliere Oscuro e il suo acerrimo nemico, il Joker.',
+        'price' => 39.99,
+        'sale_date' => '2019-03-19',
+        'type' => 'Cartonato',
+        'artists' => [
+            'Alan Moore', 
+            'Brian Bolland'
+        ],
+        'thumb' => 'https://www.panini.it/media/catalog/product/cache/a87cfc69c89e7921deea3a8e066ac416/m/1/m1abso002isbnr_0.jpg',
+        'page' => 144,
+        'size' => '18.4 x 27.7 cm'
+    ],
+    [
+        'title' => 'Swamp Thing Omnibus Vol 3',
+        'description' => 'Il terzo volume che conclude la leggendaria run di Alan Moore su Swamp Thing. Il ciclo si chiude con storie potenti che intrecciano temi ecologici e filosofici, con un finale che ridefinisce l\'eroe e la sua connessione con la Terra.',
+        'price' => 99.99,
+        'sale_date' => '2023-04-18',
+        'type' => 'Cartonato',
+        'artists' => [
+            'Alan Moore', 
+            'Stephen Bissette', 
+            'John Totleben'
+        ],
+        'thumb' => 'https://www.panini.it/media/catalog/product/cache/a87cfc69c89e7921deea3a8e066ac416/m/1/m1abso018isbn_0.jpg',
+        'page' => 448,
+        'size' => '18.4 x 27.7 cm'
+    ],
+    [
+        'title' => 'Sandman Omnibus Vol 4',
+        'description' => 'Quarto volume della serie Sandman di Neil Gaiman, in cui il Signore dei Sogni continua il suo viaggio tra mondi paralleli, creature mitologiche e storie che travalicano il tempo e lo spazio.',
+        'price' => 99.99,
+        'sale_date' => '2021-01-12',
+        'type' => 'Cartonato',
+        'artists' => [
+            'Neil Gaiman', 
+            'Marc Hempel', 
+            'Michael Zulli'
+        ],
+        'thumb' => 'https://www.panini.it/media/catalog/product/cache/a87cfc69c89e7921deea3a8e066ac416/m/1/m1abso028isbn_0.jpg',
+        'page' => 576,
+        'size' => '18.4 x 27.7 cm'
+    ],    
     [
         'title' => 'Lanterna Verde: Rinascita',
         'description' => 'Il ritorno di Hal Jordan come Lanterna Verde in una miniserie scritta da Geoff Johns che segna un punto di svolta nel mito di Lanterna Verde.',
@@ -173,6 +320,20 @@ return [
         'size' => '18 x 27 cm'
     ],
     [
+        'title' => 'Superman: Stagioni',
+        'description' => 'Superman: Stagioni è una delle storie più emozionanti dell\'Uomo d\'Acciaio, scritta da Jeph Loeb e disegnata da Tim Sale. Il racconto segue Superman attraverso le quattro stagioni, offrendo un ritratto intimo e umano del supereroe.',
+        'price' => 49.99,
+        'sale_date' => '2021-05-12',
+        'type' => 'Cartonato',
+        'artists' => [
+            'Jeph Loeb', 
+            'Tim Sale'
+        ],
+        'thumb' => 'https://www.panini.it/media/catalog/product/cache/a87cfc69c89e7921deea3a8e066ac416/m/1/m1dcmh014isbn_0_ltg9fqapsxuafsef.jpg',
+        'page' => 240,
+        'size' => '18.4 x 27.7 cm'
+    ],    
+    [
         'title' => 'Luthor',
         'description' => 'Una storia che esplora il punto di vista di Lex Luthor, mostrando il suo odio e il suo conflitto con Superman in una luce diversa. Un capolavoro firmato da Brian Azzarello e Lee Bermejo.',
         'price' => 24.99,
@@ -185,6 +346,20 @@ return [
         'thumb' => 'https://www.panini.it/media/catalog/product/cache/a87cfc69c89e7921deea3a8e066ac416/M/1/M1BLMH024ISBN_0.jpg',
         'page' => 144,
         'size' => '17 x 26 cm'
+    ],
+    [
+        'title' => 'Sandman: Overture',
+        'description' => 'Sandman: Overture è il prequel della serie di Neil Gaiman che esplora le origini del Signore dei Sogni. Una storia visivamente mozzafiato e ricca di immaginazione che approfondisce i misteri e le leggende dietro il regno dei sogni.',
+        'price' => 79.99,
+        'sale_date' => '2015-10-27',
+        'type' => 'Cartonato',
+        'artists' => [
+            'Neil Gaiman', 
+            'J.H. Williams III'
+        ],
+        'thumb' => 'https://www.panini.it/media/catalog/product/cache/a87cfc69c89e7921deea3a8e066ac416/M/1/M1ABSO038ISBN_0.jpg',
+        'page' => 224,
+        'size' => '18.4 x 27.7 cm'
     ],
     [
         'title' => 'Batman: Hush',
@@ -229,6 +404,21 @@ return [
         'size' => '17 x 26 cm'
     ],
     [
+        'title' => 'Lobo DC Omnibus Vol 1',
+        'description' => 'Il primo volume delle avventure folli e violente di Lobo, l\'antieroe intergalattico della DC Comics. Questo Omnibus raccoglie le storie classiche che hanno reso Lobo uno dei personaggi più estremi e amati dell\'universo DC.',
+        'price' => 99.99,
+        'sale_date' => '2020-11-17',
+        'type' => 'Cartonato',
+        'artists' => [
+            'Keith Giffen', 
+            'Alan Grant', 
+            'Simon Bisley'
+        ],
+        'thumb' => 'https://www.panini.it/media/catalog/product/cache/a87cfc69c89e7921deea3a8e066ac416/M/1/M1OMNI014ISBN_0.jpg',
+        'page' => 784,
+        'size' => '18.4 x 27.7 cm'
+    ],    
+    [
         'title' => 'La Morte di Superman',
         'description' => 'L\'epico scontro tra Superman e Doomsday che culmina con la morte dell\'Uomo d\'Acciaio. Una delle storie più celebri e vendute nella storia dei fumetti.',
         'price' => 19.99,
@@ -270,6 +460,21 @@ return [
         'page' => 256,
         'size' => '17 x 26 cm'
     ],
+    [
+        'title' => 'Sandman Omnibus Vol 5',
+        'description' => 'Il quinto volume di Sandman conclude la saga epica di Neil Gaiman, un\'opera che ha ridefinito il fumetto moderno con il suo mix unico di mitologia, filosofia e narrativa dark.',
+        'price' => 99.99,
+        'sale_date' => '2021-09-14',
+        'type' => 'Cartonato',
+        'artists' => [
+            'Neil Gaiman', 
+            'Michael Zulli', 
+            'Charles Vess'
+        ],
+        'thumb' => 'https://www.panini.it/media/catalog/product/cache/a87cfc69c89e7921deea3a8e066ac416/M/1/M1ABSO033ISBN_0.jpg',
+        'page' => 600,
+        'size' => '18.4 x 27.7 cm'
+    ],    
     [
         'title' => 'La Notte più Profonda',
         'description' => 'Il più grande evento cosmico dell\'universo DC, che coinvolge tutti i personaggi e i corpi delle Lanterne contro l\'invasione del Corpo delle Lanterne Nere.',

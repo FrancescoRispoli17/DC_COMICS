@@ -63,10 +63,29 @@ class ComicController extends Controller
      */
     public function show(Comic $comic)
     {
-        // $role = Role::create(['name' => 'dataMenager']);
-        // $user = User::find(1);
-        // $user->assignRole('dataMenager');
-        return view('comics.show', compact('comic'));
+        $simils = Comic::join('comic_artist', 'comic_artist.comic_id', '=', 'comics.id')
+            ->join('artists', 'comic_artist.artist_id', '=', 'artists.id')
+            ->whereIn('artists.id', function($query) use ($comic) {
+                $query->select('artist_id')
+                    ->from('comic_artist')
+                    ->where('comic_id', $comic->id);  // Artisti in comune con il fumetto corrente
+            })
+            ->where('comics.id', '!=', $comic->id)  // Escludere il fumetto corrente
+            ->select('comics.*')  // Seleziona solo le colonne di "comics"
+            ->groupBy('comics.id')  // Raggruppa per ID fumetto
+            ->paginate(4);
+
+            if (request()->ajax()) {
+                return response()->json([
+                    'html' => view('comics.partials.simils', compact('simils'))->render(),
+                    'prev_page_url' => $simils->previousPageUrl(),
+                    'next_page_url' => $simils->nextPageUrl(),
+                    'on_first_page' => $simils->onFirstPage(),
+                    'has_more_pages' => $simils->hasMorePages(),
+                ]);
+            }
+
+        return view('comics.show', compact('comic','simils'));
     }
 
     /**
@@ -102,30 +121,4 @@ class ComicController extends Controller
         return redirect()->route('comics.index');
     }
 
-    // public function validation($data)
-    // {
-    //     $validation = FacadesValidator::make($data,[
-    //          'title'=>'required|max:50',
-    //          'description'=>'required|max:1000',
-    //          'thumb'=>'required|max:350',
-    //          'price'=>'required|integer|min:0',
-    //          'series'=>'required|max:100',
-    //          'sale_date'=>'required|date',
-    //          'type'=>'required|max:20',   
-    //     ],[
-    //         'title.required' => 'Inserisci il titolo',
-    //         'title.max' => 'Inserire massimo 50 caratteri',
-    //         'description.required' => 'Inserisci la descrizione',
-    //         'description.required' => 'Inserire massimo 1000 caratteri',
-    //         'thumb.required' => 'Inserisci indirizzo foto',
-    //         'price.required' => 'Inserisci il prezzo',
-    //         'price.min' => 'prezzo minimo 0',
-    //         'series.required' => 'Inserisci la serie',
-    //         'series.max' => 'Inserire massimo 100 caratteri',
-    //         'sale_date.required' => 'Inserisci la data',
-    //         'type.required' => 'Inserisci il tipo',
-    //         'type.max' => 'Inserire massimo 20 caratteri',   
-    //     ])->validate();
-    //     return $validation;
-    // }
 }

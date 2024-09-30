@@ -18,7 +18,7 @@ class ComicArtistSeeder extends Seeder
         $data = config('comics');  // Dati dal file di configurazione
 
         foreach ($data as $index => $comic_db) {
-            $comic = Comic::find($index+1);  // Trova il fumetto
+            $comic = Comic::where('title', $comic_db['title'])->first(); // Trova il fumetto
 
             if ($comic) {
                 foreach ($comic_db['artists'] as $artist_name) {

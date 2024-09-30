@@ -53,4 +53,58 @@
             </div>
         </div>
     </div>
+
+    <div class="container simils position-relative">
+        <h2 class="my-3 ms-5 ps-5">Guarda anche:</h2>
+        <div id="simil-container">
+            @include('comics.partials.simils', ['simils' => $simils])
+        </div>
+
+        <button id="prev" class="btn border rounded-3 border-black position-absolute top-50"
+            data-url="{{ $simils->previousPageUrl() }}" {{ $simils->onFirstPage() ? 'disabled' : '' }}
+            style="left:100px"><i class="fa-solid fa-less-than"></i></button>
+
+        <button id="next" class="btn rounded-3 border-black position-absolute top-50" 
+            data-url="{{ $simils->nextPageUrl() }}" {{ !$simils->hasMorePages() ? 'disabled' : '' }} 
+            style="right:100px"><i class="fa-solid fa-greater-than"></i></button>
+    </div>
+
+    <script>
+        document.getElementById("prev").addEventListener("click", function () {
+            paginate(this.dataset.url);
+        });
+
+        document.getElementById("next").addEventListener("click", function () {
+            paginate(this.dataset.url);
+        });
+
+        function paginate(url) {
+            if (!url) return;
+
+            fetch(url, {
+                headers: {
+                    'X-Requested-With': 'XMLHttpRequest'
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Aggiorna il contenitore con i nuovi fumetti
+                document.getElementById('simil-container').innerHTML = data.html;
+
+                // Aggiorna i bottoni prev e next
+                const prevButton = document.getElementById('prev');
+                const nextButton = document.getElementById('next');
+
+                // Aggiorna lo stato e l'URL dei bottoni
+                prevButton.disabled = data.on_first_page;
+                nextButton.disabled = !data.has_more_pages;
+
+                prevButton.dataset.url = data.prev_page_url;
+                nextButton.dataset.url = data.next_page_url;
+            })
+            .catch(error => console.error('Error:', error));
+        }
+
+    </script>
+    
 @endsection
