@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\CharacterController;
 use App\Http\Controllers\Admin\ComicController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\ProfileController;
@@ -31,6 +32,9 @@ Route::middleware('auth', 'verified')
 
 Route::get('/comics', [ComicController::class,'index'])->name('comics.index');
 Route::get('/comics/{comic}', [ComicController::class,'show'])->name('comics.show');
+
+Route::get('/characters', [CharacterController::class,'index'])->name('characters.index');
+Route::get('/characters/{character}', [CharacterController::class,'show'])->name('characters.show');
 
 Route::middleware('auth')
 ->group(function () {

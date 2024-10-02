@@ -10,10 +10,10 @@
               <div class="col collapse navbar-collapse fw-bold" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
                     <li class="nav-item mt-2 ms-1 mt-md-0">
-                        <a href="#" class="listLink">CHARACTERS</a>
+                        <a href="{{route('characters.index')}}" class="{{ Request::is('characters*') ? 'text-primary' : '' }}">CHARACTERS</a>
                     </li>
                     <li class="nav-item mt-2 ms-1 mt-md-0">
-                        <a href="{{route('comics.index')}}" class="listLink @yield('active')">COMICS</a>
+                        <a href="{{route('comics.index')}}" class="{{ Request::is('comics*') ? 'text-primary' : '' }}">COMICS</a>
                     </li>
                     <li class="nav-item mt-2 ms-1 mt-md-0">
                         <a href="#" class="listLink">MOVIES</a>

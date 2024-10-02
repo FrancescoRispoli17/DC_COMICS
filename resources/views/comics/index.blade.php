@@ -39,7 +39,7 @@
         </div>
     </div>
 
-    <div class="bg-main py-5" id="section-3">
+    {{-- <div class="bg-main py-5" id="section-3">
         <div class="container text-light">
             <div class="row">
                 <div class="col-auto">
@@ -74,5 +74,5 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 @endsection

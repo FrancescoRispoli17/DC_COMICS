@@ -1,26 +1,174 @@
 @use "variables.scss" as *;
 
+#show-page{
+    img{
+        width: 700px;
+    }
+    .static-dropdown {
+        position: static; /* Evita che il dropdown fluttui sopra gli altri elementi */
+        display: block; /* Trasforma il dropdown in un blocco che occupa spazio nel layout */
+    }
+}
 
 .simils{
     figure{
         width: 100%;
-        padding-top: 100%; /* Questo crea un'altezza uguale alla larghezza */
-        position: relative; /* Importante per posizionare correttamente l'immagine all'interno */
-        overflow: hidden;
+        height: 170px;
         img{
-            position: absolute;
-            top: 0;
-            left: 0;
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
     }
+}
+
+@media screen and (max-width:1399px){
+
+    #show-page{
+        img{
+            width: 600px;
+        }
+    }
+
+}
+@media screen and (max-width:1199px){
+
+    #show-page{
+        img{
+            width: 500px;
+        }
+        .h1{
+            font-size: 50px;
+        }
+    }
+    #prev{
+        left: 50px !important;
+    }
+    #next{
+        right:50px !important
+    }
+
+}
+@media screen and (max-width:991px){
+
+    #show-page{
+        img{
+            width: 400px;
+        }
+        .h1{
+            font-size: 30px;
+        }
+        .testo{
+            font-size: 15px;
+        }
+    }
+    #prev{
+        left: 30px !important;
+    }
+    #next{
+        right:30px !important
+    }
+    .simils{
+        figure{
+            height: 120px;
+        }
+        .comic-card{
+            .m-0{
+                font-size: 13px;
+            }
+        }
+    }
 
 }
 
-@media screen and (max-width:484px){
+@media screen and (max-width:767px){
 
-    
+    #show-page{
+        img{
+            width: 280px;
+        }
+        .h1{
+            font-size: 23px;
+        }
+        .testo{
+            font-size: 12px;
+        }
+        .titoli{
+            font-size: 15px !important;
+            margin-bottom: 5px !important;
+        }
+    }
+    #prev{
+        left: 20px !important;
+        top:260px !important;
+    }
+    #next{
+        right:20px !important;
+        top:260px !important;
+    }
+}
+@media screen and (max-width:527px){
 
+    #show-page{
+        img{
+            width: 230px;
+        }
+        .h1{
+            font-size: 23px;
+        }
+        .testo{
+            font-size: 12px;
+        }
+        .titoli{
+            font-size: 15px !important;
+            margin-bottom: 5px !important;
+        }
+    }
+}
+@media screen and (max-width:469px){
+
+    #show-page{
+        img{
+            width: 200px;
+        }
+        .h1{
+            font-size: 18px;
+        }
+        .testo{
+            font-size: 12px;
+        }
+        .titoli{
+            font-size: 15px !important;
+            margin-bottom: 5px !important;
+        }
+    }
+    #prev{
+        top:230px !important;
+    }
+    #next{
+        top:230px !important;
+    }
+    .simils{
+        figure{
+            height: 80px;
+        }
+    }
+}
+@media screen and (max-width:363px){
+
+    #show-page{
+        img{
+            width: 180px;
+        }
+        hr{
+            margin: 0 !important;
+        }
+        .h1{
+            font-size: 18px;
+        }
+        .titoli{
+            font-size: 13px !important;
+            margin-bottom: 5px !important;
+        }
+    }
 }
