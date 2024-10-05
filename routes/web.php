@@ -5,6 +5,10 @@ use App\Http\Controllers\Admin\ComicController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Admin\ProjectController;
+use App\Models\Character;
+use App\Models\Comic;
+use App\Models\Film;
+use App\Models\Serie;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,7 +23,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $characters = Character::all();
+    $comics = Comic::all();
+    $films = Film::all();
+    $series = Serie::all();
+    return view('welcome',compact('comics','characters','films','series'));
 });
 
 Route::middleware('auth', 'verified')

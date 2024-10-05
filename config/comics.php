@@ -488,5 +488,228 @@ return [
         'thumb' => 'https://www.panini.it/media/catalog/product/cache/a87cfc69c89e7921deea3a8e066ac416/M/1/M1DCEV006ISBN_0.jpg',
         'page' => 416,
         'size' => '17 x 26 cm'
-    ]
+    ],[
+        'title' => 'Il Batman che Ride',
+        'description' => '',
+        'price' => 35.99,
+        'sale_date' => '2019-03-12',
+        'type' => 'Cartonato',
+        'artists' => [
+            'Scott Snyder', 
+            'Jock'
+        ],
+        'thumb' => 'https://www.panini.it/media/catalog/product/cache/a87cfc69c89e7921deea3a8e066ac416/m/1/m1dceg005isbn_0.jpg',
+        'page' => 224,
+        'size' => '18.4 x 27.7 cm'
+    ],
+    [
+        'title' => 'Doom Patrol: Il Peso dei Mondi',
+        'description' => '',
+        'price' => 29.99,
+        'sale_date' => '2020-07-14',
+        'type' => 'Cartonato',
+        'artists' => [
+            'Gerard Way', 
+            'Nick Derington'
+        ],
+        'thumb' => 'https://www.panini.it/media/catalog/product/cache/a87cfc69c89e7921deea3a8e066ac416/M/1/M1YOAN008ISBN_0.jpg',
+        'page' => 280,
+        'size' => '18.4 x 27.7 cm'
+    ],
+    [
+        'title' => 'Superman: L’Uomo d’Acciaio',
+        'description' => '',
+        'price' => 44.99,
+        'sale_date' => '2018-08-15',
+        'type' => 'Cartonato',
+        'artists' => [
+            'Brian Michael Bendis', 
+            'Ivan Reis'
+        ],
+        'thumb' => 'https://www.panini.it/media/catalog/product/cache/a87cfc69c89e7921deea3a8e066ac416/m/1/m1dcmh004isbn_0_knccezkw1hlp1hq4.jpg',
+        'page' => 352,
+        'size' => '18.4 x 27.7 cm'
+    ],
+    [
+        'title' => 'Lanterna Verde: Origini',
+        'description' => '',
+        'price' => 27.99,
+        'sale_date' => '2021-09-07',
+        'type' => 'Cartonato',
+        'artists' => [
+            'Geoff Johns', 
+            'Ivan Reis'
+        ],
+        'thumb' => 'https://www.panini.it/media/catalog/product/cache/a87cfc69c89e7921deea3a8e066ac416/M/1/M1SIAO016ISBN_0.jpg',
+        'page' => 240,
+        'size' => '18.4 x 27.7 cm'
+    ],
+    [
+        'title' => 'Justice League: Guerra di Darkseid',
+        'description' => '',
+        'price' => 49.99,
+        'sale_date' => '2017-05-24',
+        'type' => 'Cartonato',
+        'artists' => [
+            'Geoff Johns', 
+            'Jason Fabok'
+        ],
+        'thumb' => 'https://www.panini.it/media/catalog/product/cache/a87cfc69c89e7921deea3a8e066ac416/M/1/M1DCEG007ISBN_0.jpg',
+        'page' => 368,
+        'size' => '18.4 x 27.7 cm'
+    ],
+    [
+        'title' => 'Wonder Woman: Sangue',
+        'description' => '',
+        'price' => 19.99,
+        'sale_date' => '2013-10-09',
+        'type' => 'Cartonato',
+        'artists' => [
+            'Brian Azzarello', 
+            'Cliff Chiang'
+        ],
+        'thumb' => 'https://m.media-amazon.com/images/I/61yuMhNBnbL._SY445_SX342_.jpg',
+        'page' => 176,
+        'size' => '18.4 x 27.7 cm'
+    ],
+    [
+        'title' => 'Aquaman: Morte di un Re',
+        'description' => '',
+        'price' => 32.99,
+        'sale_date' => '2014-04-16',
+        'type' => 'Cartonato',
+        'artists' => [
+            'Geoff Johns', 
+            'Paul Pelletier'
+        ],
+        'thumb' => 'https://m.media-amazon.com/images/I/618AEhKbkdL._SY445_SX342_.jpg',
+        'page' => 320,
+        'size' => '18.4 x 27.7 cm'
+    ],
+    [
+        'title' => 'Flash: Rinascita',
+        'description' => '',
+        'price' => 24.99,
+        'sale_date' => '2019-05-10',
+        'type' => 'Cartonato',
+        'artists' => [
+            'Joshua Williamson', 
+            'Carmine Di Giandomenico'
+        ],
+        'thumb' => 'https://www.panini.it/media/catalog/product/cache/a87cfc69c89e7921deea3a8e066ac416/m/1/m1dcmh005isbn_0_4xwkkemfgkzqueym.jpg',
+        'page' => 240,
+        'size' => '18.4 x 27.7 cm'
+    ],
+    [
+        'title' => 'Lanterna Verde: Sinestro Corps War',
+        'description' => '',
+        'price' => 59.99,
+        'sale_date' => '2020-10-20',
+        'type' => 'Cartonato',
+        'artists' => [
+            'Geoff Johns', 
+            'Ethan Van Sciver'
+        ],
+        'thumb' => 'https://www.panini.it/media/catalog/product/cache/a87cfc69c89e7921deea3a8e066ac416/M/1/M1MAXI020ISBN_0.jpg',
+        'page' => 480,
+        'size' => '18.4 x 27.7 cm'
+    ],
+    [
+        'title' => 'Batman: La Corte dei Gufi',
+        'description' => '',
+        'price' => 42.99,
+        'sale_date' => '2012-11-14',
+        'type' => 'Cartonato',
+        'artists' => [
+            'Scott Snyder', 
+            'Greg Capullo'
+        ],
+        'thumb' => 'https://m.media-amazon.com/images/I/51vESNH9zFL._SY445_SX342_.jpg',
+        'page' => 336,
+        'size' => '18.4 x 27.7 cm'
+    ],
+    [
+        'title' => 'Freccia Verde: Rinascita',
+        'description' => '',
+        'price' => 25.99,
+        'sale_date' => '2019-06-05',
+        'type' => 'Cartonato',
+        'artists' => [
+            'Benjamin Percy', 
+            'Otto Schmidt'
+        ],
+        'thumb' => 'https://www.comicsbox.it/cover_dc/GREARR_RB_001.jpg',
+        'page' => 192,
+        'size' => '18.4 x 27.7 cm'
+    ],
+    [
+        'title' => 'Superman: Identità Segreta',
+        'description' => '',
+        'price' => 27.99,
+        'sale_date' => '2019-10-01',
+        'type' => 'Cartonato',
+        'artists' => [
+            'Kurt Busiek', 
+            'Stuart Immonen'
+        ],
+        'thumb' => 'https://www.panini.it/media/catalog/product/cache/a87cfc69c89e7921deea3a8e066ac416/M/1/M1DCMH032ISBN_0.jpg',
+        'page' => 224,
+        'size' => '18.4 x 27.7 cm'
+    ],
+    [
+        'title' => 'Justice League: Torre di Babele',
+        'description' => '',
+        'price' => 29.99,
+        'sale_date' => '2001-09-26',
+        'type' => 'Cartonato',
+        'artists' => [
+            'Mark Waid', 
+            'Howard Porter'
+        ],
+        'thumb' => 'https://m.media-amazon.com/images/I/51eN6c19nCL._SY445_SX342_.jpg',
+        'page' => 192,
+        'size' => '18.4 x 27.7 cm'
+    ],
+    [
+        'title' => 'Lanterna Verde: Terra Uno',
+        'description' => '',
+        'price' => 32.99,
+        'sale_date' => '2018-03-14',
+        'type' => 'Cartonato',
+        'artists' => [
+            'Gabriel Hardman', 
+            'Corinna Bechko'
+        ],
+        'thumb' => 'https://www.panini.it/media/catalog/product/cache/a87cfc69c89e7921deea3a8e066ac416/M/1/M1EAON008ISBN_0.jpg',
+        'page' => 144,
+        'size' => '18.4 x 27.7 cm'
+    ],
+    [
+        'title' => 'Joker: L’Uomo che ha smesso di ridere',
+        'description' => '',
+        'price' => 21.99,
+        'sale_date' => '2020-06-17',
+        'type' => 'Cartonato',
+        'artists' => [
+            'Ed Brubaker', 
+            'Doug Mahnke'
+        ],
+        'thumb' => 'https://www.panini.it/media/catalog/product/cache/a87cfc69c89e7921deea3a8e066ac416/M/1/M1JOKE017_0.jpg',
+        'page' => 144,
+        'size' => '18.4 x 27.7 cm'
+    ],
+    [
+        'title' => 'Shazam: Origini',
+        'description' => '',
+        'price' => 24.99,
+        'sale_date' => '2019-03-06',
+        'type' => 'Cartonato',
+        'artists' => [
+            'Geoff Johns', 
+            'Gary Frank'
+        ],
+        'thumb' => 'https://www.panini.it/media/catalog/product/cache/a87cfc69c89e7921deea3a8e066ac416/M/1/M1DCEG020ISBN_0.jpg',
+        'page' => 176,
+        'size' => '18.4 x 27.7 cm'
+    ],
 ];

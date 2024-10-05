@@ -106,8 +106,275 @@ return [
         'thumb' => 'https://static.dc.com/dc/files/default_images/Char_Thumb_Flash_20190116_5c3fcaaa18f023.90325986.jpg?w=384',
         'release_date' => '1940-01-01',
         'creators' => 'Gardner Fox, Harry Lampert',
-        'description' => 'The Flash è il supereroe più veloce del mondo, capace di muoversi a velocità incredibili. Diversi personaggi hanno assunto il ruolo di Flash, con Barry Allen e Wally West i più noti. Grazie alla sua connessione con la Speed Force, Flash può fare molto più che correre: può viaggiare nel tempo, vibrare attraverso oggetti e guarire rapidamente. Nonostante la sua immensa velocità, è noto per la sua umiltà e il suo desiderio di usare i suoi poteri per aiutare il prossimo.'
-    ]
+        'description' => 'The Flash è il supereroe più veloce del mondo, capace di muoversi a velocità incredibili...'
+    ],
+    [
+        'character' => 'Catwoman',
+        'first_appearance' => 'Batman #1',
+        'thumb' => 'https://static.dc.com/dc/files/default_images/Char_Thumb_Catwoman_5c47c984ed1bf1.93808647.jpg?w=384',
+        'release_date' => '1940-04-01',
+        'creators' => 'Bill Finger, Bob Kane',
+        'description' => ''
+    ],
+    [
+        'character' => 'Bane',
+        'first_appearance' => 'Batman: Vengeance of Bane #1',
+        'thumb' => 'https://static.dc.com/dc/files/default_images/Char_Thumb_Bane_5c410f07428e44.78856363.jpg?w=384',
+        'release_date' => '1993-01-01',
+        'creators' => 'Chuck Dixon, Doug Moench, Graham Nolan',
+        'description' => ''
+    ],
+    [
+        'character' => 'Peacemaker',
+        'first_appearance' => 'Fightin\' 5 #40',
+        'thumb' => 'https://static.dc.com/dc/files/default_images/Char_Thumb_Peacemaker_610860006b93d0.24360953.jpg?w=384',
+        'release_date' => '1966-11-01',
+        'creators' => 'Joe Gill, Pat Boyette',
+        'description' => ''
+    ],
+    [
+        'character' => 'Harley Quinn',
+        'first_appearance' => 'Batman: The Animated Series',
+        'thumb' => 'https://static.dc.com/dc/files/default_images/Char_Thumb_HarleyQuinn_5c4a3e758122a3.39576701.jpg?w=384',
+        'release_date' => '1992-09-11',
+        'creators' => 'Paul Dini, Bruce Timm',
+        'description' => ''
+    ],
+    [
+        'character' => 'Killer Croc',
+        'first_appearance' => 'Detective Comics #523',
+        'thumb' => 'https://static.dc.com/dc/files/default_images/Char_Thumb_KillerCroc_5eb5b4acdd1260.22159867.jpg?w=384',
+        'release_date' => '1983-02-01',
+        'creators' => 'Gerry Conway, Gene Colan',
+        'description' => ''
+    ],
+    [
+        'character' => 'Deadshot',
+        'first_appearance' => 'Batman #59',
+        'thumb' => 'https://static.dc.com/dc/files/default_images/Char_Thumb_Deadshot_5c48a31e72eb60.98147718.jpg?w=384',
+        'release_date' => '1950-06-01',
+        'creators' => 'Bob Kane, David Vern Reed, Lew Schwartz',
+        'description' => ''
+    ],
+    [
+        'character' => 'Deathstroke',
+        'first_appearance' => 'The New Teen Titans #2',
+        'thumb' => 'https://static.dc.com/dc/files/default_images/Char_Thumb_Deathstroke_5c48a4b4b208e8.17788113.jpg?w=384',
+        'release_date' => '1980-12-01',
+        'creators' => 'Marv Wolfman, George Pérez',
+        'description' => ''
+    ],
+    [
+        'character' => 'The Riddler',
+        'first_appearance' => 'Detective Comics #140',
+        'thumb' => 'https://static.dc.com/dc/files/default_images/Char_Thumb_Riddler_5c53a3b5e018c4.92974885.jpg?w=384',
+        'release_date' => '1948-10-01',
+        'creators' => 'Bill Finger, Dick Sprang',
+        'description' => ''
+    ],
+    [
+        'character' => 'Penguin',
+        'first_appearance' => 'Detective Comics #58',
+        'thumb' => 'https://static.dc.com/dc/files/default_images/Char_Thumb_Penguin_5c5250a8ad2602.47297230.jpg?w=384',
+        'release_date' => '1941-12-01',
+        'creators' => 'Bill Finger, Bob Kane',
+        'description' => ''
+    ],
+    [
+        'character' => 'Two-Face',
+        'first_appearance' => 'Detective Comics #66',
+        'thumb' => 'https://static.dc.com/dc/files/default_images/Char_Thumb_TwoFace_5c5a399af0f557.68468222.jpg?w=384',
+        'release_date' => '1942-08-01',
+        'creators' => 'Bob Kane, Bill Finger',
+        'description' => ''
+    ],
+    [
+        'character' => 'Suicide Squad',
+        'first_appearance' => 'The Brave and the Bold #25',
+        'thumb' => 'https://static.dc.com/dc/files/default_images/ThumbChar_192x291_SuicideSquad01_558b711cab2cc7.78319011.jpg?w=192',
+        'release_date' => '1959-09-01',
+        'creators' => 'Robert Kanigher, Ross Andru',
+        'members' => 'Deadshot, Harley Quinn, Captain Boomerang, Rick Flag, King Shark',
+        'description' => ''
+    ],
+    [
+        'character' => 'Teen Titans',
+        'first_appearance' => 'The Brave and the Bold #54',
+        'thumb' => 'https://static.dc.com/dc/files/default_images/titans_192x291_53c589733da380.01296612.jpg?w=192',
+        'release_date' => '1964-07-01',
+        'creators' => 'Bob Haney, Bruno Premiani',
+        'members' => 'Robin, Starfire, Raven, Beast Boy, Cyborg, Donna Troy',
+        'description' => ''
+    ],
+    [
+        'character' => 'Robin',
+        'first_appearance' => 'Detective Comics #38',
+        'thumb' => 'https://static.dc.com/dc/files/default_images/Char_Thumb_Robin_5c5c888fd675e4.98555002.jpg?w=384',
+        'release_date' => '1940-04-01',
+        'creators' => 'Bob Kane, Bill Finger, Jerry Robinson',
+        'description' => ''
+    ],
+    [
+        'character' => 'Starfire',
+        'first_appearance' => 'DC Comics Presents #26',
+        'thumb' => 'https://static.dc.com/dc/files/default_images/Char_Thumb_Starfire_5f861a27cdb0f2.50441655.jpg?w=384',
+        'release_date' => '1980-10-01',
+        'creators' => 'Marv Wolfman, George Pérez',
+        'description' => ''
+    ],
+    [
+        'character' => 'Raven',
+        'first_appearance' => 'DC Comics Presents #26',
+        'thumb' => 'https://static.dc.com/dc/files/default_images/Char_Thumb_Raven2_5c525571ef82a6.09738300.jpg?w=384',
+        'release_date' => '1980-10-01',
+        'creators' => 'Marv Wolfman, George Pérez',
+        'description' => ''
+    ],
+    [
+        'character' => 'Beast Boy',
+        'first_appearance' => 'The Doom Patrol #99',
+        'thumb' => 'https://static.dc.com/dc/files/default_images/Char_Thumb_BeastBoy_5c411282c5c040.32747717.jpg?w=384',
+        'release_date' => '1965-11-01',
+        'creators' => 'Arnold Drake, Bob Brown',
+        'description' => ''
+    ],
+    [
+        'character' => 'Cyborg',
+        'first_appearance' => 'DC Comics Presents #26',
+        'thumb' => 'https://static.dc.com/dc/files/default_images/Char_Thumb_Cyborg_20190116_5c3fcd9048a0e1.41912254.jpg?w=384',
+        'release_date' => '1980-10-01',
+        'creators' => 'Marv Wolfman, George Pérez',
+        'description' => ''
+    ],
+    [
+        'character' => 'Donna Troy',
+        'first_appearance' => 'The Brave and the Bold #60',
+        'thumb' => 'https://static.dc.com/dc/files/default_images/Char_Thumb_DonnaTroy_5d799d61689c96.32666760.jpg?w=384',
+        'release_date' => '1965-06-01',
+        'creators' => 'Bob Haney, Bruno Premiani',
+        'description' => ''
+    ],
+    [
+        'character' => 'Red Hood',
+        'first_appearance' => 'Batman #635',
+        'thumb' => 'https://static.dc.com/dc/files/default_images/Char_Thumb_RedHood_5f20be014954a5.16447111.jpg?w=384',
+        'release_date' => '2005-02-01',
+        'creators' => 'Judd Winick, Doug Mahnke',
+        'description' => ''
+    ],
+    [
+        'character' => 'Shazam',
+        'first_appearance' => 'Whiz Comics #2',
+        'thumb' => 'https://static.dc.com/dc/files/default_images/Char_Thumb_Shazam_5c53a74aefbb12.02099042.jpg?w=384',
+        'release_date' => '1940-02-01',
+        'creators' => 'C. C. Beck, Bill Parker',
+        'description' => ''
+    ],
+    [
+        'character' => 'Black Adam',
+        'first_appearance' => 'The Marvel Family #1',
+        'thumb' => 'https://static.dc.com/dc/files/default_images/Char_Thumb_BlackAdam_5c4116746eea88.12548444.jpg?w=384',
+        'release_date' => '1945-12-01',
+        'creators' => 'Otto Binder, C. C. Beck',
+        'description' => ''
+    ],
+    [
+        'character' => 'Nightwing',
+        'first_appearance' => 'Tales of the Teen Titans #44',
+        'thumb' => 'https://static.dc.com/dc/files/default_images/Char_Thumb_Nightwing_2_5c50fa380942a3.78305981.jpg?w=384',
+        'release_date' => '1984-07-01',
+        'creators' => 'Marv Wolfman, George Pérez',
+        'description' => ''
+    ],
+    [
+        'character' => 'Hawkman',
+        'first_appearance' => 'Flash Comics #1',
+        'thumb' => 'https://static.dc.com/dc/files/default_images/Char_Thumb_Hawkman_5c4a3f9b947261.58857874.jpg?w=384',
+        'release_date' => '1940-01-01',
+        'creators' => 'Gardner Fox, Dennis Neville',
+        'description' => ''
+    ],
+    [
+        'character' => 'Supergirl',
+        'first_appearance' => 'Action Comics #252',
+        'thumb' => 'https://static.dc.com/dc/files/default_images/Char_Thumb_Supergirl_5b6b48c92a5d42.10749263.jpg?w=192',
+        'release_date' => '1959-05-01',
+        'creators' => 'Otto Binder, Al Plastino',
+        'description' => ''
+    ],
+    [
+        'character' => 'Zatanna',
+        'first_appearance' => 'Hawkman #4',
+        'thumb' => 'https://static.dc.com/dc/files/default_images/Char_Thumb_Zatanna_5c5a3dd6b811f3.85644553.jpg?w=384',
+        'release_date' => '1964-11-01',
+        'creators' => 'Gardner Fox, Murphy Anderson',
+        'description' => ''
+    ],
+    [
+        'character' => 'Blue Beetle',
+        'first_appearance' => 'Mystery Men Comics #1',
+        'thumb' => 'https://static.dc.com/dc/files/default_images/Char_Thumb_BlueBeetle_5c4118a71474e2.43949452.jpg?w=384',
+        'release_date' => '1939-08-01',
+        'creators' => 'Charles Nicholas Wojtkoski',
+        'description' => ''
+    ],
+    [
+        'character' => 'Black Canary',
+        'first_appearance' => 'Flash Comics #86',
+        'thumb' => 'https://static.dc.com/dc/files/default_images/Char_Thumb_BlackCanary_5c41184e20ee69.98463239.jpg?w=384',
+        'release_date' => '1947-08-01',
+        'creators' => 'Robert Kanigher, Carmine Infantino',
+        'description' => ''
+    ],
+    [
+        'character' => 'Martian Manhunter',
+        'first_appearance' => 'Detective Comics #225',
+        'thumb' => 'https://static.dc.com/dc/files/default_images/Char_Thumb_MartianManhunter_20190116_5c3fd5c45bcd52.92066763.jpg?w=384',
+        'release_date' => '1955-11-01',
+        'creators' => 'Joseph Samachson, Joe Certa',
+        'description' => ''
+    ],
+    [
+        'character' => 'Huntress',
+        'first_appearance' => 'DC Super Stars #17',
+        'thumb' => 'https://static.dc.com/dc/files/default_images/Char_Thumb_Huntress__5e1e75ba8a0478.82655987.jpg?w=384',
+        'release_date' => '1977-12-01',
+        'creators' => 'Paul Levitz, Joe Staton',
+        'description' => ''
+    ],
+    [
+        'character' => 'Booster Gold',
+        'first_appearance' => 'Booster Gold #1',
+        'thumb' => 'https://static.dc.com/dc/files/default_images/Char_Thumb_BoosterGold_5c411938e61ab5.56452822.jpg?w=384',
+        'release_date' => '1986-02-01',
+        'creators' => 'Dan Jurgens',
+        'description' => ''
+    ],
+    [
+        'character' => 'Firestorm',
+        'first_appearance' => 'Firestorm #1',
+        'thumb' => 'https://static.dc.com/dc/files/default_images/Char_Thumb_Firestorm_5c4913a08f6fb8.44458825.jpg?w=384',
+        'release_date' => '1978-03-01',
+        'creators' => 'Gerry Conway, Al Milgrom',
+        'description' => ''
+    ],
+    [
+        'character' => 'Vixen',
+        'first_appearance' => 'Action Comics #521',
+        'thumb' => 'https://static.dc.com/dc/files/default_images/Char_Thumb_Vixen_5c5a3b114ad9d0.18810289.jpg?w=384',
+        'release_date' => '1981-07-01',
+        'creators' => 'Gerry Conway, Bob Oksner',
+        'description' => ''
+    ],
+    [
+        'character' => 'Atom',
+        'first_appearance' => 'Showcase #34',
+        'thumb' => 'https://static.dc.com/dc/files/default_images/Char_Thumb_Atom_5d7845c24cf931.57331689.jpg?w=384',
+        'release_date' => '1961-09-01',
+        'creators' => 'Gardner Fox, Gil Kane',
+        'description' => ''
+    ],
 ];
+
 
 ?>
