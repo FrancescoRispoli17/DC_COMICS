@@ -2,6 +2,10 @@ import './bootstrap';
 import '~resources/scss/app.scss';
 import * as bootstrap from 'bootstrap';
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+
+gsap.registerPlugin(ScrollTrigger,ScrollToPlugin);
 
 import.meta.glob([
     '../img/**'
@@ -12,7 +16,7 @@ let homeAnimation = null;
 
 function animation() {
   return new Promise((resolve) => {
-    homeAnimation = gsap.to(".box", {
+    homeAnimation = gsap.to(".box",2, {
       duration: 4,
       scale: 2,
       y: 60,
@@ -29,6 +33,60 @@ function animation() {
     });
   });
 }
+
+// let mm = gsap.matchMedia();
+// let moveDirection = "max"; // Scrolla verso destra inizialmente
+
+// mm.add("(max-width: 1400px)", () => {
+
+//   // Verifica che l'elemento abbia larghezza sufficiente per scrollare
+//   let homeGsap = document.getElementById('home-gsap');
+//   if (homeGsap.scrollWidth <= homeGsap.clientWidth) {
+//     console.error("Assicurati che #home-gsap sia più largo di #home-background.");
+//     return;
+//   }
+
+//   // Crea una variabile di animazione GSAP (inizialmente in pausa)
+//   let autoScroll = gsap.to("#home-gsap", {
+//     duration: 50,
+//     scrollTo: { x: moveDirection },
+//     ease: "none",
+//   });
+
+//   // Avvia l'animazione di auto scroll
+//   autoScroll.play();
+
+//   // Usa ScrollTrigger.observe per rilevare l'interazione dell'utente
+//   ScrollTrigger.observe({
+//     type: "wheel,scroll",
+//     onWheel: (self) => {
+//       // Quando l'utente interagisce con lo scroll, ferma l'auto scroll
+//       autoScroll.pause();
+//     },
+//     onStop: (self) => {
+//       // Cambia la direzione in base al movimento dell'utente
+//       if (self.deltaX < 0) {
+//         moveDirection = 0; // Scrolla a sinistra
+//       } else {
+//         moveDirection = "max"; // Scrolla a destra
+//       }
+
+//       // Riavvia l'auto scroll una volta che l'utente si ferma
+//       autoScroll = gsap.to("#home-gsap", { 
+//         duration: 50, 
+//         scrollTo: { x: moveDirection }, 
+//         ease: "none" 
+//       });
+//       autoScroll.play(); // Riprendi lo scroll automatico
+//     },
+//     onStopDelay: 0.25 // Imposta un breve ritardo prima di riprendere lo scroll
+//   });
+// });
+
+// // Chiude matchMedia
+// mm.revert();
+
+
 // function animationSearch() {
 //   return new Promise((resolve) => {
 //     searchAnimation = gsap.to(".search", {
@@ -92,19 +150,15 @@ async function getBox() {
     }
   }
 
-
   elementoCasuale.forEach(element => {
     element.classList.add('box', 'z-2','opacity-100');
   });
 
-
   await animation();
-
 
   elementoCasuale.forEach(element => {
     element.classList.remove('box', 'z-2','opacity-100');
   });
-
 
   getBox();
 }

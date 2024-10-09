@@ -87,7 +87,7 @@
         </div>
     </div>
 
-    <div class="container simils position-relative mt-5">
+    <div class="container simils position-relative my-5">
         <h2 class="my-3 ms-md-5 ps-md-5">Guarda anche:</h2>
         <div id="simil-container">
             @include('comics.partials.simils', ['simils' => $simils])

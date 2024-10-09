@@ -9,22 +9,98 @@
 
 @import "~bootstrap/scss/bootstrap";
 
-
-// .home-img-small{
-//     width: 100px;
-//     height: 200px;
-//     img{
-
-//         width: 100% !important;
-//     }
-// }
-
-// .home-img-normal{
-//     img{
-//         width: 300px !important;
-//     }
-// }
+header{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+}
 
 #home-background{
     background-color: #131a1b;
+    overflow-x: hidden;
+}
+
+#home-gsap{
+    width:95%; 
+    div{
+        margin-top: 1rem !important;
+    }
+    .comics{
+        img{
+            height: 100%;
+        }
+    }
+}
+
+#gradiant{
+    background: linear-gradient(to left, #5716B9, #2B0645);
+}
+
+@media screen and (max-width:1400px){
+    @keyframes slide{
+        from{
+            transform: translateX(0);
+        }to{
+            transform: translateX(-40%);
+        }
+    }
+
+    #home-background{
+        overflow:hidden;
+    }
+    #home-gsap{
+        width:2000px;
+        animation: 10s slide infinite linear alternate;
+        div{
+            margin-top: 10px !important;
+
+        }
+    }
+}
+@media screen and (max-width:1024px){
+    #home-gsap{
+        width:1600px;
+    }
+}
+@media screen and (max-width:770px){
+    #home-gsap{
+        width:1100px;
+    }
+    #home-background{
+        padding-top: 1rem !important;
+        h1{
+            font-size: 20px;
+            
+        }
+    }
+    footer{
+        .row{
+            flex-direction: column !important;
+            div{
+                margin: 0 auto !important;
+                border: none !important;
+                margin-top:2px !important;
+                font-size: 12px;
+            }
+        }
+    }
+}
+@media screen and (max-width:540px){
+    #home-gsap{
+        width:800px;
+    }
+    #home-background{
+        h1{
+            font-size: 15px;
+        }
+    }
+    #gradiant{
+        h1{
+            font-size: 25px !important;
+        }
+        p{
+            font-size: 14px;
+        }
+    }
 }

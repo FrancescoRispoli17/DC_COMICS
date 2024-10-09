@@ -83,23 +83,23 @@
         <span id="caricamento">Caricamento</span>
     </div>
 
-    <div id="app" style="display:none;">
+    <div id="app" class="d-flex flex-column min-vh-100" style="display:none;">
+        <div id="main-content">
+            @include('shared.header')
+            <main class="">
+                @yield('content')
+            </main>
+        </div>
+            @include('shared.footer')
 
-        @include('shared.header')
-        <main class="">
-            @yield('content')
-        </main>
-        @include('shared.footer')
     </div>
 
     <script>
         window.addEventListener('load', function() {
-            // Nasconde il loader e mostra il contenuto con una transizione
-            // document.getElementById('loader').style.opacity = '0';
            
                 document.getElementById('loader').style.display = 'none';
                 document.getElementById('app').style.display = 'block';
-            // Ritardo per la transizione (0.5 secondi)
+
         });
     </script>
 </body>

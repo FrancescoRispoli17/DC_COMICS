@@ -11,7 +11,7 @@
 @section('content')
     @include('components.Head-img')
     <div id="section-2">
-        <div class="container position-relative pt-5">
+        <div class="container position-relative pt-1 pt-md-4">
             <div class="row">
                 @auth
                     @if (Auth::user()->hasRole('dataMenager'))
@@ -35,6 +35,9 @@
                         </a>
                     </div>
                 @endforeach
+            </div>
+            <div class=" py-3">
+                {{ $comics->links() }}
             </div>
         </div>
     </div>

@@ -17,7 +17,7 @@
                 <h1 class="fw-bold">PERSONAGGI</h1>
                </div>
                 @foreach ($characters as $character )
-                    <div class="col-6 col-md-4 col-lg-3 p-4 border-card">
+                    <div class="col-4 col-md-3 col-lg-2 p-4 border-card">
                         {{-- <a href="{{route('comics.show',$comic)}}"> --}}
                             <figure>
                                 <img src="{{$character->thumb}}" alt="">

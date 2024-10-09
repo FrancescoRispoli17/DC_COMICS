@@ -27,16 +27,16 @@
                 </ul>
                 <hr>
                   @guest
-                  <div class="d-flex">
-                      <div class="me-md-3 auth login">
-                          <a class="text-danger" href="{{ route('login') }}">{{ __('LOGIN') }}</a>
-                      </div>
-                      @if (Route::has('register'))
-                          <div class="auth register">
-                              <a class="text-danger" href="{{ route('register') }}">{{ __('REGISTER') }}</a>
-                          </div>
-                      @endif
-                  </div>
+                    <div class="d-flex">
+                        <div class="me-md-3 auth login">
+                            <a class="text-danger" href="{{ route('login') }}">{{ __('LOGIN') }}</a>
+                        </div>
+                        @if (Route::has('register'))
+                            <div class="auth register">
+                                <a class="text-danger" href="{{ route('register') }}">{{ __('REGISTER') }}</a>
+                            </div>
+                        @endif
+                    </div>
                     @else
                         <div class="nav-item dropdown ms-auto">
                             <a id="navbarDropdown" class="nav-link dropdown-toggle text-danger" href="#" role="button"
