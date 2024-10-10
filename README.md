@@ -1,6 +1,6 @@
 # How to start the project
 
-Open terminal and run the following comands:
+Open Visual Studio Code terminal and run the following comands:
 
 - composer i
 - cp .env.example .env
