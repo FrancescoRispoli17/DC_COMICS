@@ -18,7 +18,7 @@
                </div>
                 @foreach ($characters as $character )
                     <div class="col-4 col-md-3 col-lg-2 p-4 border-card">
-                        {{-- <a href="{{route('comics.show',$comic)}}"> --}}
+                         <a href="{{route('characters.show',$character)}}">
                             <figure>
                                 <img src="{{$character->thumb}}" alt="">
                             </figure>
@@ -28,6 +28,9 @@
                         </a>
                     </div>
                 @endforeach
+            </div>
+            <div class=" py-3">
+                {{ $characters->links() }}
             </div>
         </div>
     </div>

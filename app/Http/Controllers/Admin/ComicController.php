@@ -9,9 +9,9 @@ use App\Models\Artist;
 use Illuminate\Http\Request;
 use App\Models\Comic;
 use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator as FacadesValidator;
 use Illuminate\Validation\Validator;
-use Spatie\Permission\Models\Role;
 
 class ComicController extends Controller
 {
@@ -30,7 +30,12 @@ class ComicController extends Controller
     public function create()
     {
         $artists=Artist::all();
-        return view('comics.create',compact('artists'));
+        $user = auth()->user();
+
+        if($user->hasRole('dataMenager')){
+            return view('comics.create',compact('artists'));
+        }
+        return redirect()->route('comics.index');
     }
 
     /**
@@ -94,7 +99,12 @@ class ComicController extends Controller
     public function edit(Comic $comic)
     {
         $artists=Artist::all();
-        return view('comics.edit',compact('comic','artists'));
+        $user = auth()->user();
+
+        if($user->hasRole('dataMenager')){
+            return view('comics.edit',compact('comic','artists'));
+        }
+        return redirect()->route('comics.index');
     }
 
     /**

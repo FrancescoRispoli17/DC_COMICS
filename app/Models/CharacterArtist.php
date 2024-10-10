@@ -5,10 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Character extends Model
+class CharacterArtist extends Model
 {
     use HasFactory;
-    public function artists(){
-        return $this->belongsToMany(Artist::class, 'character_artist');
-    }
+    protected $table = 'character_artist';
 }

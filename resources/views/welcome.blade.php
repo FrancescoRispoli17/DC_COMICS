@@ -11,7 +11,7 @@
     <h1 class="text-white fw-bold text-center" style="font-variant: small-caps slashed-zero;">EXPLORE DC's UNIVERSE</h1>
     {{-- <input type="text" id="hero"> <button class="btn btn-primary" id="cerca">Cerca</button>  --}}
     <div class="row mx-auto" id="home-gsap" >
-        @for ($i=0;$i<44;$i++)
+        @for ($i=0;$i<47;$i++)
             @if (isset($characters[$i])) 
                 <div class= " px-0 px-md-1 opacity-50" style="width:4%;">
                     <a href="#">

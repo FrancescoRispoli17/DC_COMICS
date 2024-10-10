@@ -13,7 +13,7 @@ class CharacterController extends Controller
      */
     public function index()
     {
-        $characters = Character::all();
+        $characters = Character::paginate(30);
         return view('characters.index', compact('characters'));
     }
 
@@ -36,9 +36,9 @@ class CharacterController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Character $character)
     {
-        //
+        return view('characters.show', compact('character'));
     }
 
     /**

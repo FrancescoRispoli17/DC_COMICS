@@ -11,4 +11,8 @@ class Artist extends Model
     public function comics(){
         return $this->belongsToMany(Comic::class, 'comic_artist');
     }
+    
+    public function characters(){
+        return $this->belongsToMany(Character::class, 'character_artist');
+    }
 }
