@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('first_appearance',70);
             $table->string('thumb',350);
             $table->string('description',600);
-            $table->string('members');
+            $table->string('members')->nullable();
             $table->date('release_date', $precision = 0);
             $table->timestamps();
         });
