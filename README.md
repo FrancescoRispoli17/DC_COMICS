@@ -6,6 +6,9 @@ Open Visual Studio Code terminal and run the following comands:
 - cp .env.example .env
 - php artisan key:generate
 - npm i
+- php artisan migrate
+- php artisan db:seed
+
 
 Then you can start, running:
 - npm run dev
