@@ -14,7 +14,7 @@
         @for ($i=0;$i<47;$i++)
             @if (isset($characters[$i])) 
                 <div class= " px-0 px-md-1 opacity-50" style="width:4%;">
-                    <a href="#">
+                    <a href="{{route('characters.show',$characters[$i])}}">
                         <img src="{{$characters[$i]->thumb}}" alt="" width="100%">
                         <input type="hidden" id="name" value="{{ $characters[$i]->character }}"> 
                     </a>

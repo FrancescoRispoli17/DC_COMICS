@@ -20,6 +20,12 @@
                         </div>
                     @endif
                 @endauth
+                <div class="col-12 text-end mb-3 p-0">
+                    <form action="{{ route('comics.index') }}" method="GET" class="ms-auto border w-25">
+                        <input type="text" name="title" class="border-0 w-75 m-0" style=" outline:none;">
+                        <button class="btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
                 @foreach ($comics as $comic )
                     <div class="col-6 col-md-4 col-lg-3 p-4 border-card">
                         <a href="{{route('comics.show',$comic)}}">
@@ -36,46 +42,9 @@
                     </div>
                 @endforeach
             </div>
-            <div class=" py-3">
+            {{-- <div class=" py-3">
                 {{ $comics->links() }}
-            </div>
+            </div> --}}
         </div>
     </div>
-
-    {{-- <div class="bg-main py-5" id="section-3">
-        <div class="container text-light">
-            <div class="row">
-                <div class="col-auto">
-                    <i class="fa-solid fa-tablet-screen-button"></i>
-                </div>
-                <div class="col py-3 me-5">
-                    DIGITAL COMICS
-                </div>
-                <div class="col-auto">
-                    <i class="fa-solid fa-shirt"></i>
-                </div>
-                <div class="col py-3 me-5">
-                    DC MERCHANDISE
-                </div>
-                <div class="col-auto">
-                    <i class="fa-solid fa-user-pen"></i>
-                </div>
-                <div class="col py-3 me-5">
-                    SUBSCRIPTION
-                </div>
-                <div class="col-auto">
-                    <i class="fa-solid fa-location-dot"></i>
-                </div>
-                <div class="col-auto py-3 me-5">
-                    COMIC SHOP LOCATOR
-                </div>
-                <div class="col-auto">
-                    <i class="fa-solid fa-bolt"></i>
-                </div>
-                <div class="col-auto py-3 me-5">
-                    DC POWER VISA
-                </div>
-            </div>
-        </div>
-    </div> --}}
 @endsection

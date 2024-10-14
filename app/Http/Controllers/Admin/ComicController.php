@@ -18,9 +18,12 @@ class ComicController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-        $comics = Comic::paginate(28);
+        if($request->title){
+            $comics = Comic::where('title','LIKE','%'.$request->title.'%')->get();
+        }else
+            $comics = Comic::paginate(28);
         return view('comics.index', compact('comics'));
     }
 
